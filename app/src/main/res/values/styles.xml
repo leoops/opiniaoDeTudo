@@ -6,6 +6,59 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="toolbarNavigationButtonStyle">@style/CustomActionBarTheme</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- Night Theme Configure -->
+    <style name="AppThemeNight" parent="Theme.AppCompat">
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="toolbarNavigationButtonStyle">@style/CustomActionBarTheme</item>
+        <item name="colorPrimary">@color/night_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/night_colorPrimaryDark</item>
+        <item name="colorAccent">@color/night_colorAccent</item>
+        <item name="android:colorBackground">@color/night_background</item>
+        <item name="android:textColor">@color/night_textColor</item>
+        <item name="android:textColorHint">@color/night_colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/night_textColor</item>
+        <item name="android:textColorSecondary">@color/night_colorPrimaryDark</item>
+        <item name="android:buttonStyle">@style/NightButtonStyle</item>
+    </style>
+
+
+    <style name="AppThemeNight.NoActionBar" parent="AppThemeNight">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NightButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/night_colorPrimary</item>
+        <item name="android:background">@color/night_colorPrimaryDark</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!--10.16-->
+    <style name="TextAppearance.Design.CollapsingToolbar.Expanded.Custom"
+           parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textColor">@color/night_textColor</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title.Custom"
+           parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="CustomActionBarTheme"
+           parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:tint">@android:color/white</item>
     </style>
 
 </resources>
